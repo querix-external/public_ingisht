@@ -607,7 +607,7 @@
   .qx-tbody
   .qx-table-row 
   .qx-table-cell.qx-c-activefield.qx-content
-  .qx-text-field
+  .qx-text-field:not(.qx-aum-function-field-abs)
   .qx-text,
   .qx-table
   .qx-brow.qx-isc
