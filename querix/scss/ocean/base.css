@@ -707,6 +707,7 @@
   --fgl-color-magenta-blink-fg: rgb(217, 102, 255);
 
   --bool-widget-height: 40px;
+  --md-table-header-height: 32px;
 }
 
 
