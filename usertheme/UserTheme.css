@@ -1,0 +1,173 @@
+@import url("/public/querix/css/ocean/_css_master.css");
+
+.qx-layout > aside > .qx-info-area > div {
+  /* background-image: url(/public/insight/logo.png) !important; */
+  background-image: url(/public/insight/insight-financials-logo437x210.png) !important;
+  /* background-position: 83px; */
+}
+
+.qx-thead-row .qx-aum-table-column.qx-table-cell {
+  margin: var(--md-groupbox-header-margin);
+  padding: var(--md-groupbox-header-padding);
+  height: var(--md-groupbox-header-height);
+  min-height: var(--md-groupbox-header-height);
+  font: var(--md-groupbox-title-font);
+  color: var(--md-groupbox-header-frg);
+  overflow: hidden;
+}
+
+.qx-hrow .scrollbar-filler.vertical,
+.qx-thead-row .qx-aum-table-column.qx-table-cell {
+  background-color: var(--md-groupbox-header-bkg);
+}
+
+.qx-thead {
+  border-radius: 4px 4px 0 0;
+}
+
+.qx-hrow {
+  margin-top: 1px;
+  border-bottom: none !important;
+}
+
+.qx-table-footer-cell > .qx-aum-stack-panel {
+  flex-direction: row !important;
+}
+
+.qx-table-footer-cell > .qx-aum-stack-panel:first-child {
+  align-self: start;
+}
+
+.qx-table-footer-cell > .qx-aum-label.qx-ha-r {
+  align-self: end !important;
+}
+
+.qx-table-footer-cell > .qx-aum-label .qx-text {
+  white-space-collapse: collapse;
+  text-wrap: nowrap;
+}
+
+.qx-table-footer-cell .qx-aum-stack-panel > .qx-aum-label[data-has-text="false"] {
+  display: none !important;
+}
+
+.qx-table-footer-cell .qx-aum-stack-panel > .qx-aum-label[data-text="totals:"] {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+:root,
+:root.md-concise {
+  /* Decrease application bar height (was 48px) */
+  --qx-appbar-height: 32px;
+  /* Decrease tab button font (was 14px) */
+	--qx-tab-button-font: 100 10px "Noto Sans", "Roboto", sans-serif;
+  /* Align group box headers with the labels of the group box content - depends on labels alignment and positioning */
+  --md-groupbox-header-padding: 6px 6px 6px 9px;
+	/* --qx-drawer-background: #06232d;
+	--cnt-tb-header-color-bg: #06232d;
+	--md-groupbox-header-bkg: #06232d; */
+}
+
+.qx-table-full-screen-toggle-button {
+	top: 4px;
+	right: 3px;
+}
+
+aside > label.qx-toggle {
+  /* top: calc((var(--qx-appbar-height) - 24px) / 2); */
+	top: 40px;
+	z-index: 2;
+}
+
+.qx-layout > aside > .qx-info-area {
+	height: 144px;
+	padding: 0;
+	z-index: 1;
+}
+
+.qx-layout > aside > .qx-info-area > div {
+  /* background-size: contain; */
+	background-size: 300px 144px;
+	background-position: left center;	
+}
+
+.qx-md-chip.qx-md-all-apps {
+	top: 144px;
+}
+
+.qx-md-chip.qx-md-all-apps + .qx-drawer-area {
+	top: 170px;
+}
+
+.qx-aum-label.qx-aum-abstract-text-field[data-identifier="lbImageLogo"],
+.qx-aum-label.qx-aum-abstract-text-field[data-identifier="lbImageLogo"] img {
+	width: 437px !important;
+	height: 349px !important;
+}
+
+.qx-aum-label.qx-aum-abstract-text-field[data-identifier="lbImageLogo"] {
+	padding: 0;
+  border: 0;
+  border-radius: 5px;
+}
+
+  /* Decrease padding of the vertical tab buttons */
+.qx-tabplacement-right > .qx-tabco-buttons > .qx-tabco-wrapper > .qx-tabco-scrollable-wrapper > .qx-tab-button {
+  padding: 0 6px;
+}
+
+
+/* Remove left/right margins of window root (which are set in i_menu/styles/qx_compat.css)  */
+.qx-window-root {
+  margin-left: 2px !important;
+  margin-right: 2px !important;
+}
+
+/* Remove top/bottom margins of window root (which are set in _css_master.css) */
+.qx-c-fcls_detail_cnt.qx-aum-items-container.qx-aum-abstract-container {
+  margin-top: 2px !important;
+  margin-bottom: 0 !important
+}
+
+/* Decrease space between toolbar buttons and tab buttons*/
+.qx-toolbar-container .qx-aum-toolbar-button {
+  margin-bottom: 0 !important;
+}
+
+.md-tf.md-tf-short > .md-text-container {
+  border-left: 1px solid var(--md-tf-enabled-idle-input-line) !important;
+}
+
+.qx-material-design .qx-aum-table-column.qx-table-cell.qx-hta-r:not(:last-of-type),
+.qx-material-design .qx-table-cell.qx-content.qx-hta-r:not(:last-of-type) {
+  padding-right: 8px !important;
+}
+
+/* UNCOMMENT to hide a tab buttons bar if it contains single tab button */
+/*
+#qx-tc-button-0 {
+	display: none;
+}
+
+.qx-tabco-buttons:has(.qx-tabco-scrollable-wrapper > :only-child) {
+	display: none;
+}
+*/
+
+
+
+/*
+:root,
+:root.md-concise {
+  --qx-appbar-height: 32px;
+}
+
+aside > label.qx-toggle {
+  top: calc((var(--qx-appbar-height) - 24px) / 2);
+}
+
+.qx-layout > aside > .qx-info-area > div {
+  background-size: contain;
+}
+*/
