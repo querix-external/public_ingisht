@@ -714,14 +714,29 @@
 /* ############################### */
 /* FONT for field labels */
 /* ############################### */
+.qx-aum-label{
+  font: var(--qx-field-label-font);
+  color: var(--label-fg-color);
+}
+/*
 .qx-aum-label .qx-text {
   font: var(--qx-field-label-font);
   color: var(--label-fg-color);
 }
+*/
 
 /* ############################### */
 /* FONT for textField based widgets (text) (input/display) */
 /* ############################### */
+.qx-aum-text-field.qx-text-field,
+.qx-text-field.qx-aum-text-area,
+.qx-aum-calendar,
+.qx-aum-time-edit-field,
+.qx-text-field.qx-aum-combo-box.qx-has-text {
+  font: var(--qx-textfield-font);
+}
+
+/*
 .qx-aum-text-field.qx-text-field .qx-text,
 .qx-text-field.qx-aum-text-area,
 .qx-aum-calendar,
@@ -729,8 +744,7 @@
 .qx-text-field.qx-aum-combo-box.qx-has-text .qx-text {
   font: var(--qx-textfield-font);
 }
-
-
+*/
 
 
 
@@ -743,7 +757,8 @@
 }
 /* default font for table CURRENT row */
 .qx-table-row.qx-selected .qx-table-cell.qx-content,
-.qx-table-row.qx-selected .qx-table-cell.qx-content .qx-ff-text.qx-focus-element .qx-text-field .qx-text {
+/*.qx-table-row.qx-selected .qx-table-cell.qx-content .qx-ff-text.qx-focus-element .qx-text-field .qx-text {*/
+.qx-table-row.qx-selected .qx-table-cell.qx-content .qx-ff-text.qx-focus-element .qx-text-field {
   font-size: var(--qx-display-array-font) !important;
   /* One define a fix row highlight color here */
   /* color: blue  !important;                */
