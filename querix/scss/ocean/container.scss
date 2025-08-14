@@ -129,13 +129,13 @@
   /*var(--dialog-box-button-color-bg);*/;
   }
 
-  .qx-groupbox-header.ui-accordion-header.ui-accordion-icons.ui-accordion-header-active.ui-state-active .qx-text {
+  .qx-groupbox-header.ui-accordion-header.ui-accordion-icons.ui-accordion-header-active.ui-state-active {
     font: var(--cnt-gb-titlebar-font);
-    color: var(--cnt-gb-titlebar-color-fg);
-    // background-color: var(--cnt-gb-titlebar-color-fg);
   }
 
-  /*qx-text*/
+  .qx-groupbox-header.ui-accordion-header.ui-accordion-icons.ui-accordion-header-active.ui-state-active .qx-text {
+    color: var(--cnt-gb-titlebar-color-fg);
+  }
 
   /*GroupBox Icon to fold/unfold HuHo 13.11.2018*/
   .qx-aum.qx-aum-group-box.qx-display-grid > label > .qx-icon::after {
@@ -160,7 +160,7 @@
   /* white;*/;
   }
 
-  .qx-aum-group-box.qx-aum-abstract-container .qx-groupbox-header.ui-accordion-header .qx-text {
+  .qx-aum-group-box.qx-aum-abstract-container .qx-groupbox-header.ui-accordion-header {
     font: var(--qx-group-title-font);
   }
 
@@ -173,18 +173,7 @@
   .qx-aum-stack-panel {
     align-items: center;
   }
-  /* up for removal - no idea what it does*/
-  /*should it ever select, I want to see it to address this issue*/
-  /*
-  .qx-table-cell.qx-c-activefield.qx-aum.qx-aum-abstract-field.qx-content.qx-has-text.qx-c-attribute_reverse >
-  .qx-text-with-icon.qx-vtal.qx-htal >
-  .qx-text.qx-has-text
-  {
-    color: #cd0a0a;
-    background-color: pink;
-  }
 
-  */
   /*######################################################################*/
   /*                                                                      */
   /* Table container                                                      */
@@ -282,13 +271,6 @@
   #######################################################*/
 
 
-  /*Table (Disp/Inp Array) */
-  /*
-  .qx-c-activefield .qx-tbody  tr .qx-text.qx-has-text {
-      color: magenta;
-      background-color: yellow;
-  }
-  */
   /*Row Selection */
 
   /* ###############################################*/
@@ -434,92 +416,18 @@
     background-color: transparent;
   }
 
-
-
-
-  /*tableWidget container - HEADER row - i.e 5px top/bottom and 0px right/left*/
-  /*
-  .qx-aum-table-column .qx-text { 
-    margin: 5px 0px; 
-
-  }
-
-
-  .qx-aum-table-column {
-    border-left: 1px solid #fff !important;
-  }
-
-
-  .qx-aum-table .qx-frow .qx-tfoot .qx-tfoot .qx-tfoot-row .qx-table-footer-cell
-  { 
-  color:red !mportant;
-  border: none !mportant;
-  border-color: red !mportant;
-  }
-
-  .qx-aum-table .qx-frow .qx-tfoot .qx-tfoot .qx-tfoot-row
-  { 
-  color:red !mportant;
-  border: none !mportant;
-  border-color: red !mportant;
-  }
-
-  .qx-aum-table .qx-frow .qx-tfoot .qx-tfoot 
-  { 
-  color:red !mportant;
-  border: none !mportant;
-  border-color: red !mportant;
-  }
-
-  .qx-frow
-  { 
-  color:red !mportant;
-  border: none !mportant;
-  border-color: red !mportant;
-  }
-
-  .qx-table-footer-cell
-  { 
-  color:red !mportant;
-  border: none !mportant;
-  border-color: red !mportant;
-  }
-
-  .qx-table td, .qx-tfoot th {
-      border: solid #aaa 1px;
-      border-top-color: red !mportant;
-      border-top-style: solid;
-      border-top-width: 1px;
-      border-right-color: red !mportant;
-      border-right-style: solid;
-      border-right-width: 1px;
-      border-bottom-color: red !mportant;
-      border-bottom-style: solid;
-      border-bottom-width: 1px;
-      border-left-color: red !mportant;
-      border-left-style: solid;
-      border-left-width: 1px;
-      border-image-source: initial;
-      border-image-slice: initial;
-      border-image-width: initial;
-      border-image-outset: initial;
-      border-image-repeat: initial;
-  }
-  */
-
-
   /*####################################################*/
   /*                                                    */
   /* TABLE - ROW                                        */
   /*                                                    */
   /*####################################################*/
 
-
-
   /* table row */
   /* INPUT ARRAY default font for field in current table  row - field focus*/
-  .qx-table-row.qx-selected .qx-table-cell.qx-content.qx-c-activefield .qx-aum .qx-text {
+  .qx-table-row.qx-selected .qx-table-cell.qx-content.qx-c-activefield .qx-aum {
     font-size: var(--qx-display-array-font) !important;
+  }
+  .qx-table-row.qx-selected .qx-table-cell.qx-content.qx-c-activefield .qx-aum .qx-text {
     padding-left: 2px;
   }
   /*##############################*/

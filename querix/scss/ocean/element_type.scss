@@ -19,8 +19,8 @@
 .qx-material-design {
   .qx-aum-label.qx-c-fcls_columnlabel_rev_cell {
     background: var(--label-rev-color-bg) !important;
+    font: normal 1rem "Roboto", "Calibri", "Helvetica Neue", Sans-Serif;
     .qx-text {
-      font: normal 1rem "Roboto", "Calibri", "Helvetica Neue", Sans-Serif;
       color: var(--label-rev-color-fg);
       // background: var(--label-rev-color-bg);
       padding-right: var(--main-disabled-border-padding)!important;
