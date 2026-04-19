@@ -1,0 +1,8 @@
+.rtl, .rtl * {
+  direction: rtl !important;
+  unicode-bidi: plaintext !important;
+}
+
+.rtl input, .rtl textarea, .rtl select {
+  text-align: right !important;
+}

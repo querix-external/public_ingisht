@@ -1,0 +1,7 @@
+html, html * {
+  direction: rtl !important;
+  unicode-bidi: plain-text !important;
+}
+input, select, textarea {
+  text-align: right !important;
+}
