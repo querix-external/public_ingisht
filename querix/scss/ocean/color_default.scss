@@ -21,7 +21,7 @@
     opacity: 1;
   }
   %disabled_field_color {
-    color: var(--fgl-field-color-default-disabled-fg) !important;
+    color: var(--fgl-field-color-default-disabled-fg);
     background-color: transparent;
     opacity: 1;
   }
