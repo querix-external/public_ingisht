@@ -22,7 +22,7 @@
   }
   %disabled_field_color {
     color: var(--fgl-field-color-default-disabled-fg);
-    background-color: transparent;
+    background-color: rgba(0,0,0,0.1);
     opacity: 1;
   }
   
