@@ -41,10 +41,6 @@
 
   /* Need to check this with Victor - hightlight is always sending color blue */
   /*Check color_default and size_length for duplicates*/
-  // .qx-c-attribute_green.qx-aum-some.ui-row-ltr.qx-focusable.qx-table-row.qx-selected .qx-table-cell.qx-c-activefield.qx-aum-some.qx-aum-abstract-field.qx-has-text {
-  //   background-color: var(--fgl-color-green-fg);
-  //   color: var(--fgl-color-green-bg);
-  // }
   /*BEGIN qx-c-attribute_*/
   @each $color in $colorlist {
     .qx-c-attribute_#{$color} {
