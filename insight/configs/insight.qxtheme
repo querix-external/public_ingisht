@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StyleSheet xmlns="http://querix.com">
+  <DoStyleAction>
+    <Include IncludeFileName="{CONTEXT}/public/querix/theme/ocean/_theme_master.qxtheme"/>
+  </DoStyleAction>
+
+  <ElementIdFilter Identifier="nav_page_of">
+    <StyleSheet>
+      <DoStyleAction>
+        <SetProperty>
+          <PropertyPath>
+            <PropertyName>Wrapper</PropertyName>
+          </PropertyPath>
+          <PropertyValue type="Wrapper" Name="insight_recnum" />
+        </SetProperty>
+      </DoStyleAction>
+    </StyleSheet>
+  </ElementIdFilter>
+
+  <ElementFilter ElementName="Label">
+    <StyleSheet>
+      <WithPseudoClassFilter PseudoClassName="Message">
+        <StyleSheet>
+          <DoStyleAction>
+            <SetProperty>
+              <PropertyPath>
+                <PropertyName>Wrapper</PropertyName>
+              </PropertyPath>
+              <PropertyValue type="Wrapper" Name="popup" Parameter="snackbar,info" />
+            </SetProperty>
+          </DoStyleAction>
+        </StyleSheet>
+      </WithPseudoClassFilter>
+
+      <WithPseudoClassFilter PseudoClassName="Error">
+        <StyleSheet>
+          <DoStyleAction>
+            <SetProperty>
+              <PropertyPath>
+                <PropertyName>Wrapper</PropertyName>
+              </PropertyPath>
+              <PropertyValue type="Wrapper" Name="popupError" Parameter="snackbar,error" />
+            </SetProperty>
+          </DoStyleAction>
+        </StyleSheet>
+      </WithPseudoClassFilter>
+    </StyleSheet>
+
+  </ElementFilter>
+
+</StyleSheet>
