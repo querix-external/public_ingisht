@@ -64,7 +64,7 @@
     color: var(--fgl-color-default-fg);
   }
   
-  .qx-disabled:not(.qx-aum-label.qx-aum-abstract-string-field) {                                                                                  
+  .qx-disabled {                                                                                  
     @extend %disabled_field_color;                                                                
   }
   .qx-aum-browser {
