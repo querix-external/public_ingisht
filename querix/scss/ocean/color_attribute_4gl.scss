@@ -45,9 +45,9 @@
   @each $color in $colorlist {
     .qx-c-attribute_#{$color} {
       &.qx-aum-label {
-        & .qx-text {
+        // & .qx-text {
           color: var(--fgl-color-#{$color}-fg);	
-        }    
+        // }    
         // color: var(--fgl-color-#{$color}-fg);	
         &.qx-c-attribute_reverse {
           background-color: var(--fgl-color-#{$color}-rev-bg);    
