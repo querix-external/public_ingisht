@@ -205,6 +205,24 @@ aside > label.qx-toggle {
 	color: #000 !important;
 }
 
-.fieldtable-notes .md-input {
-	font-size: 1.6rem;
+.fieldtable-notes textarea.md-input {
+	font-size: 1.1rem;
+}
+
+.qx-aum-blob-viewer > .qx-blob-menu-row {
+	justify-self: center;
+	justify-content: center;
+}
+
+.qx-aum[data-full-screen], .qx-aum-grid-panel.qx-display-grid > .qx-aum[data-full-screen] {
+	z-index: 100003 !important;
+}
+
+#qx-portal-mount-root .qx-aum-blob-viewer .qx-blob-menu-row {
+	justify-self: center;
+	background: white;
+	border: 1px solid #aaa;
+	border-top: none;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
 }
