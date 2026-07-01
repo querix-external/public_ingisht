@@ -226,3 +226,19 @@ aside > label.qx-toggle {
 	border-bottom-left-radius: 6px;
 	border-bottom-right-radius: 6px;
 }
+
+/* BEGIN styling FunctionField on @Kevon McLean's demand */
+.numeric-value.qx-aum-function-field-abs.md-tf.md-tf-short[data-has-trailing-button="true"] > .md-text-container > .md-input {
+	padding-left: var(--md-tf-short-trailing-button-padding);;
+	padding-right: var(--md-tf-short-padding-l);
+}
+
+.numeric-value.qx-aum-function-field-abs .md-text-trailing-button {
+	right: auto;
+	left: 4px;
+}
+
+.numeric-value.qx-aum-function-field-abs .md-text-trailing-button svg {
+	transform: rotate(180deg);
+}
+/* END styling FunctionField on @Kevon McLean's demand */
