@@ -1,5 +1,9 @@
 @import url("/public/querix/css/ocean/_css_master.css");
 
+html:not(.right-sidebar) #qx-main-layout:has([data-topmost-fullscreen-window].hide-sidebar) > aside {
+  overflow: hidden;
+}
+
 .qx-layout > aside > .qx-info-area > div {
   /* background-image: url(/public/insight/logo.png) !important; */
   background-image: url(/public/insight/insight-financials-logo437x210.png) !important;
