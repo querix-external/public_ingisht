@@ -242,3 +242,30 @@ aside > label.qx-toggle {
 	transform: rotate(180deg);
 }
 /* END styling FunctionField on @Kevon McLean's demand */
+
+/* CSS Styling override with CFC Colors (Kevon Mc Lean) */
+.qx-aum-menu-bar[data-vdom-component][data-menutype="drawer"] .qx-submenu-wrapper::before{
+	background-color: rgb(45 45 45 / 87%);	
+}
+.qx-material-design:root{
+	background: #636363;
+}
+.qx-c-fcls_title_cnt.qx-aum-grid-panel.qx-aum-items-container.qx-aum-abstract-container{
+	background-color: #4d8955;
+}
+.qx-tabco-buttons{
+	background: rgb(235 235 235);
+}
+.qx-c-fcls_detail_gb_cnt.qx-aum-group-box .qx-groupbox-header{
+	background: #636363;
+}
+.qx-material-design:root {
+    --main-color-073: #636363;
+    --main-color-074: #53707c;
+}
+.qx-layout > aside > .qx-drawer-area > menu {
+    background-color: rgb(10 19 20);
+}
+/* END: CSS Styling with CFC Colors (Kevon Mc Lean) */
+
+
