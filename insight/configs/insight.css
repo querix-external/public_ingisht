@@ -10,9 +10,18 @@ html:not(.right-sidebar) #qx-main-layout:has([data-topmost-fullscreen-window].hi
   /* background-position: 83px; */
 }
 
-.table-container
+.table-container.row-context-menu > .table-header.qx-hrow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--table-row-controls-column-width);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+}
 
-.qx-hrow .scrollbar-filler.vertical,
+.table-container.row-context-menu > .table-header.qx-hrow::before,
+.table-container .qx-hrow .scrollbar-filler.vertical,
 .qx-thead-row .qx-aum-table-column.qx-table-cell {
   background-color: var(--md-groupbox-header-bkg);
 }
