@@ -279,6 +279,12 @@ aside > label.qx-toggle {
 .qx-layout > aside > .qx-drawer-area > menu {
     background-color: rgb(10 19 20);
 }
+.qx-bool-widget > input:indeterminate ~ .wrapper > [data-checkbox="indeterminate"] {
+	fill: #d9e6ea;
+}
+.qx-bool-widget > input:checked ~ .wrapper > [data-checkbox="checked"] {
+	fill: #4d8955;
+}
 /* END: CSS Styling with CFC Colors (Kevon Mc Lean) */
 
 
