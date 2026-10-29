@@ -22,7 +22,7 @@
     font: var(--qx-header-font);
     // font: bold 14px "Roboto","Calibri","Helvetica Neue", Sans-Serif;
   } 
-  .qx-aum.qx-aum-items-container.qx-aum-abstract-container.qx-c-fcls_title_cnt .qx-aum-label .qx-text {
+  .qx-aum.qx-aum-items-container.qx-aum-abstract-container.qx-c-fcls_title_cnt .qx-aum-label:not(.tag):not(.rating) .qx-text {
     @extend %frg;
   }
   .qx-aum.qx-c-fcls_statusbar_cnt {

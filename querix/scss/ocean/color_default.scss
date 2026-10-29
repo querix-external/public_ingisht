@@ -29,38 +29,38 @@
   /* CSS is used for label/text properties                    */
   /*DEFAULT Label color*/
   /*4gl color default (no attribute(color)) huho: 03.11.2018 */
-  .qx-aum-label .qx-text {
+  .qx-aum-label:not(.tag):not(.rating) .qx-text {
     color: var(--fgl-color-default-fg);
   }
   /* 4gl color ATTRIBUTE(REVERSE) */
-  .qx-c-attribute_reverse.qx-aum-label .qx-text {
+  .qx-c-attribute_reverse.qx-aum-label:not(.tag):not(.rating) .qx-text {
     color: var(--fgl-color-default-rev-fg);
     background-color: var(--fgl-color-default-rev-bg);
   }
-  .qx-c-attribute_reverse.qx-aum-label {
+  .qx-c-attribute_reverse.qx-aum-label:not(.tag):not(.rating) {
     color: var(--fgl-color-default-dim);
     background-color: var(--fgl-color-default-rev-bg);
   }
   /* 4gl color ATTRIBUTE(DIM) */
-  .qx-c-attribute_dim.qx-aum-label .qx-text {
+  .qx-c-attribute_dim.qx-aum-label:not(.tag):not(.rating) .qx-text {
     color: var(--fgl-color-default-dim-fg);
     background-color: transparent;
   }
-  .qx-c-attribute_dim.qx-aum-label {
+  .qx-c-attribute_dim.qx-aum-label:not(.tag):not(.rating) {
     color: var(--fgl-color-default-dim-bg);
     background-color: var(--fgl-color-default-dim-bg);
   }
   /*4gl color ATTRIBUTE(BLINK) */
-  .qx-c-attribute_blink.qx-aum-label .qx-text {
+  .qx-c-attribute_blink.qx-aum-label:not(.tag):not(.rating) .qx-text {
     color: var(--fgl-color-default-blink-fg);
     background-color: transparent;
   }
   /*parent background-color*/
-  .qx-c-attribute_blink.qx-aum-label {
+  .qx-c-attribute_blink.qx-aum-label:not(.tag):not(.rating) {
     background-color: var(--fgl-color-blink-bg-label);
   }
   /*4gl color ATTRIBUTE(UNDERLINE) */
-  .qx-c-attribute_underline.qx-aum-label .qx-text {
+  .qx-c-attribute_underline.qx-aum-label:not(.tag):not(.rating) .qx-text {
     color: var(--fgl-color-default-fg);
   }
   
@@ -95,12 +95,12 @@
   /*Table (Disp/Inp Array) */
   /*normal color = NO 4gl ATTRIBUTE(color)*/
   /*default*/
-  .qx-aum-some:not(.qx-c-nativestyle),
-  .qx-aum-some.qx-aum:not(.qx-c-nativestyle) * {
+  .qx-aum-some:not(.qx-c-nativestyle):not(.chip):not(.tag),
+  .qx-aum-some.qx-aum:not(.qx-c-nativestyle):not(.chip):not(.tag) * {
     color: var(--fgl-color-default-fg);
   }
   
-  .qx-aum[data-md-widget]:not(.qx-c-nativestyle):not(.qx-disabled) {
+  .qx-aum[data-md-widget]:not(.chip):not(.tag):not(.qx-c-nativestyle):not(.qx-disabled) {
     color: var(--fgl-color-default-fg);
   }
   /* Table ROW */

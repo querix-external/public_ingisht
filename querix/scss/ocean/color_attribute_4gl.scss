@@ -28,13 +28,13 @@
     background-color: var(--fgl-color-blue-rev-bg);
   }
 
-  .qx-aum-some.qx-c-attribute_reverse:not(.qx-c-nativestyle),
-  .qx-aum-some.qx-c-attribute_reverse.qx-aum:not(.qx-c-nativestyle) * {
+  .qx-aum-some.qx-c-attribute_reverse:not(.qx-c-nativestyle):not(.chip):not(.tag),
+  .qx-aum-some.qx-c-attribute_reverse.qx-aum:not(.qx-c-nativestyle):not(.chip):not(.tag) * {
     /*color: var(--fgl-color-black-bg); */
     background: var(--fgl-color-default-fg);
   }
-  .qx-c-attribute_reverse[data-md-widget]:not(.qx-c-nativestyle),
-  .qx-c-attribute_reverse:not(.qx-c-nativestyle) {
+  .qx-c-attribute_reverse[data-md-widget]:not(.qx-c-nativestyle):not(.chip):not(.tag),
+  .qx-c-attribute_reverse:not(.qx-c-nativestyle):not(.chip):not(.tag) {
     color: var(--fgl-color-default-bg);
     background-color: var(--fgl-color-default-fg); 
   }
@@ -44,29 +44,26 @@
   /*BEGIN qx-c-attribute_*/
   @each $color in $colorlist {
     .qx-c-attribute_#{$color} {
-      &.qx-aum-label {
-        // & .qx-text {
+      &.qx-aum-label:not(.tag):not(.rating) {
           color: var(--fgl-color-#{$color}-fg);	
-        // }    
-        // color: var(--fgl-color-#{$color}-fg);	
-        &.qx-c-attribute_reverse {
+        &.qx-c-attribute_reverse:not(.tag):not(.rating):not(.chip) {
           background-color: var(--fgl-color-#{$color}-rev-bg);    
         }    
-        &.qx-c-attribute_reverse .qx-text {
+        &.qx-c-attribute_reverse:not(.tag):not(.rating):not(.chip) .qx-text {
           color: var(--fgl-color-#{$color}-rev-fg);	
         }    
 
-        &.qx-c-attribute_dim {
+        &.qx-c-attribute_dim:not(.tag):not(.rating):not(.chip) {
           background-color: var(--fgl-color-#{$color}-dim-bg);
         }
-        &.qx-c-attribute_dim .qx-text {
+        &.qx-c-attribute_dim:not(.tag):not(.rating):not(.chip) .qx-text {
           color: var(--fgl-color-#{$color}-dim-bg);
         }
     
-        &.qx-c-attribute_blink {
+        &.qx-c-attribute_blink:not(.tag):not(.rating):not(.chip) {
           background-color: var(--fgl-color-blink-bg-label);
         }
-        &.qx-c-attribute_blink .qx-text {
+        &.qx-c-attribute_blink:not(.tag):not(.rating):not(.chip) .qx-text {
           color: var(--fgl-color-#{$color}-blink-fg);
         }
       } 
@@ -148,7 +145,7 @@
       }
 
       /*Supporting 4gl color attributes for tables display/ipnut array*/
-      &:not(.qx-c-nativestyle) {
+      &:not(.qx-c-nativestyle):not(.tag):not(.rating):not(.chip) {
         color: var(--fgl-color-#{$color}-fg);
         /*ABRA*/
         @at-root &[data-md-widget],

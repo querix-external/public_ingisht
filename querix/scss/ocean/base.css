@@ -609,10 +609,6 @@
   --fgl-color-default-bg: rgba(203, 215, 231,1);
   --main-label-rev-color-fg: var(--main-color-000);
   --main-label-rev-color-bg: var(--main-color-073);
-/*
---fgl-color-default-rev-fg: white;
---fgl-color-default-rev-bg: rgb(58, 89, 126);
-*/
   --fgl-label-color-default-enabled-fg: var(--main-label-color-fg);
   --fgl-label-color-default-enabled-bg: var(--main-label-color-bg);
   --fgl-label-color-default-disabled-fg: var(--main-label-color-fg);
@@ -673,7 +669,6 @@
   --fgl-color-magenta-rev-fg: white;
   --fgl-color-magenta-rev-bg: rgb(191,0,255);
 /* default fgl DIM colours */
-/*--fgl-color-dim-bg-label: rgba(225,225,225,0.3);*/
   --fgl-color-dim-bg-label: transparent;
   --fgl-color-default-dim-fg: rgb(40, 61, 87);
   --fgl-color-default-dim-bg: transparent;
@@ -694,7 +689,6 @@
   --fgl-color-magenta-dim-fg: rgb(115, 0, 153);
   --fgl-color-magenta-dim-bg: transparent;
 /* default fgl BLINK colours */
-/*--fgl-color-blink-bg-label: rgba(235,235,100,0.3);*/
   --fgl-color-blink-bg-label: transparent;
   --fgl-color-default-blink-fg: rgb(98, 136, 183);
   --fgl-color-black-blink-fg: rgb(100,100,100);
@@ -714,16 +708,10 @@
 /* ############################### */
 /* FONT for field labels */
 /* ############################### */
-.qx-aum-label{
+.qx-aum-label:not(.tag):not(.rating) {
   font: var(--qx-field-label-font);
   color: var(--label-fg-color);
 }
-/*
-.qx-aum-label .qx-text {
-  font: var(--qx-field-label-font);
-  color: var(--label-fg-color);
-}
-*/
 
 /* ############################### */
 /* FONT for textField based widgets (text) (input/display) */
@@ -736,18 +724,6 @@
   font: var(--qx-textfield-font);
 }
 
-/*
-.qx-aum-text-field.qx-text-field .qx-text,
-.qx-text-field.qx-aum-text-area,
-.qx-aum-calendar,
-.qx-aum-time-edit-field,
-.qx-text-field.qx-aum-combo-box.qx-has-text .qx-text {
-  font: var(--qx-textfield-font);
-}
-*/
-
-
-
 /* ############################### */
 /* FONT for TABLE DISPLAY/INPUT ARRAY textField text (input/display) */
 /* ############################### */
@@ -757,18 +733,13 @@
 }
 /* default font for table CURRENT row */
 .qx-table-row.qx-selected .qx-table-cell.qx-content,
-/*.qx-table-row.qx-selected .qx-table-cell.qx-content .qx-ff-text.qx-focus-element .qx-text-field .qx-text {*/
 .qx-table-row.qx-selected .qx-table-cell.qx-content .qx-ff-text.qx-focus-element .qx-text-field {
   font-size: var(--qx-display-array-font) !important;
-  /* One define a fix row highlight color here */
-  /* color: blue  !important;                */
-  /* background-color: pink !important;      */;
 }
 
 .qx-material-design:root {
   --main-color-073: rgba(83, 112, 124, 1);
   --main-color-074: rgba(83, 112, 124, 1);
-  /* --main-color-076: rgba(83, 112, 124, .7); */
   --main-color-076: rgba(217, 230, 234, 1);
   --md-table-header-frg: var(--main-color-038);
 }

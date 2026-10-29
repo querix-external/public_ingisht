@@ -31,7 +31,7 @@
       &.qx-aum-check-box,
       &.qx-aum-radio,
       &.qx-bool-widget.qx-aum.qx-aum-radio,
-      &.qx-aum-button,
+      &.qx-aum-button:not(.chip),
       &.qx-aum-progress-bar:not(.circular), 
       &.qx-horizontal.qx-aum.qx-aum-slider,
       &.qx-aum-calendar {
@@ -52,7 +52,7 @@
           }
         }
       }
-      &.qx-aum-function-field-abs .qx-aum-button {
+      &.qx-aum-function-field-abs .qx-aum-button:not(.chip) {
         flex: 1;
         align-self: stretch;
         height: auto !important;
@@ -61,7 +61,7 @@
     }
   }
   /*Special Case: only with button fit.content   qx-c-fcls_button_image_only  HuHo 03.11.2018*/
-  .qx-c-fcls_button_image_only.qx-single-row.qx-aum-button {
+  .qx-c-fcls_button_image_only.qx-single-row.qx-aum-button:not(.chip) {
     height: fit-content;
   }
   /*Multi Line Widgets / textField based*/

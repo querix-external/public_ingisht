@@ -313,7 +313,7 @@
   /* TABLE CELL */
   /* ###################################### */
 
-  .qx-table-cell.qx-c-activefield.qx-content {
+  .qx-table-cell.qx-c-activefield.qx-content:not([class*="attribute_"]) {
     // height: 2rem; - breaks Table.RowHeight logic 
     //Theme had TableColumn margin = 5 - commented there
     //Margins both for the cells and column headers are set below
@@ -324,6 +324,10 @@
     background-color: transparent!important;
   }
 
+  .qx-table-cell * {
+    background-color: inherit;
+  }
+
   .qx-aum-table-column,
   .qx-table-footer-cell,
   .qx-table-cell.qx-content {
@@ -331,7 +335,7 @@
     margin-right: 2px !important;
   }
 
-  .qx-table-footer-cell > .qx-aum-label {
+  .qx-table-footer-cell > .qx-aum-label:not(.tag):not(.rating) {
     margin: unset !important;
     padding: unset !important;
     border-width: 0 !important;
@@ -348,7 +352,7 @@
 
 
   /*
-  div.qx-aum-label.qx-aum.qx-aum-abstract-field.qx-c-nativestyle .qx-vtal{
+  div.qx-aum-label:not(.tag):not(.rating).qx-aum.qx-aum-abstract-field.qx-c-nativestyle .qx-vtal{
     vertical-align: middle;
   }
   */
