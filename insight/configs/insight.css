@@ -287,4 +287,54 @@ aside > label.qx-toggle {
 }
 /* END: CSS Styling with CFC Colors (Kevon Mc Lean) */
 
+.qx-table-cell.qx-c-activefield.qx-content .qx-aum.qx-column-edit-control.qx-element-role-input.qx-focused.qx-has-focus {
+    margin: 2px 1px 2px 0 !important;
+    padding: 2px 2px 2px 0 !important;
+    background-color: inherit !important;
+}
 
+.qx-table-cell img[alt="folder"],
+.qx-table-cell img[alt="uplevel"],
+.qx-table-cell img[alt="file"] {
+	opacity: 0;
+	display: none;
+}
+
+@font-face{
+  font-family: file_browser;
+  src: url(/public/querix/icon/fonts/file_browser.ttf) format("truetype");
+}
+
+
+.qx-table-cell:has(img[alt="file"])::before {
+	content: "\e904";
+  font: normal normal normal 22px/1 file_browser;
+	width: 24px;
+	height: 24px;
+	color: cadetblue;
+}
+
+.qx-table-cell:has(img[alt="uplevel"])::before {
+	content: "\e91c";
+  font: normal normal normal 22px/1 file_browser;
+	width: 24px;
+	height: 24px;
+	color: cadetblue;
+}
+
+/* .qx-table-cell.qx-c-activefield.qx-content[class*="attribute_"] {
+	background-color: inherit !important;
+} */
+
+.qx-table-cell:has(img[alt="folder"])::before {
+	content: "\e91b";
+  font: normal normal normal 22px/1 file_browser;
+	width: 24px;
+	height: 24px;
+	color: cadetblue;
+}
+
+.qx-table-cell:has(img[alt="folder"]) + .qx-table-cell *,
+.qx-table-cell:has(img[alt="uplevel"]) + .qx-table-cell * {
+	opacity: 0;
+}
