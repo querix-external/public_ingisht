@@ -212,6 +212,7 @@ aside > label.qx-toggle {
 
 .qx-material-design .qx-aum-tab-page .qx-aum-abstract-text-field.attribute_blue.attribute_reverse {
 	--4gl-color-blue-rev-bg: transparent !important;
+	--4gl-color-blue-bg: transparent !important;
 }
 
 .qx-material-design .qx-aum-tab-page .qx-aum-abstract-text-field.attribute_blue.attribute_reverse .qx-text {
