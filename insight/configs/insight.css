@@ -212,7 +212,6 @@ aside > label.qx-toggle {
 
 .qx-material-design .qx-aum-tab-page .qx-aum-abstract-text-field.attribute_blue.attribute_reverse {
 	--4gl-color-blue-rev-bg: transparent !important;
-	--4gl-color-blue-bg: transparent !important;
 }
 
 .qx-material-design .qx-aum-tab-page .qx-aum-abstract-text-field.attribute_blue.attribute_reverse .qx-text {
@@ -339,3 +338,42 @@ aside > label.qx-toggle {
 .qx-table-cell:has(img[alt="uplevel"]) + .qx-table-cell * {
 	opacity: 0;
 }
+
+/* TEMPORARY BLOCK UNTIL NEW BUILD IS CREATED (> 3861) */
+.qx-maximize-or-restore,
+.qx-rnd.qx-layout > header .qx-aum-menu-item.md-button:not(.chip):not(.tag):not(.rating):not(.qx-c-nativestyle):not(.qx-disabled)[data-has-text][data-has-image],
+.qx-rnd.qx-layout > header .qx-aum-toolbar-item.md-button:not(.chip):not(.tag):not(.rating):not(.qx-c-nativestyle):not(.qx-disabled)[data-has-text][data-has-image],
+.qx-rnd.qx-layout > header .qx-aum-menu-button.md-button:not(.chip):not(.tag):not(.rating):not(.qx-c-nativestyle):not(.qx-disabled)[data-has-text][data-has-image],
+.qx-rnd.qx-layout > header .qx-aum-toolbar-button.md-button:not(.chip):not(.tag):not(.rating):not(.qx-c-nativestyle):not(.qx-disabled)[data-has-text][data-has-image] {
+  color: var(--qx-dialog-tbutton-fill-nrm);
+  fill: var(--qx-dialog-tbutton-fill-nrm);
+  stroke: var(--qx-dialog-tbutton-stroke-nrm);
+}
+.qx-maximize-or-restore:hover,
+.qx-rnd.qx-layout > header .qx-aum-menu-item.md-button:not(.chip):not(.tag):not(.rating):not(.qx-c-nativestyle):not(.qx-disabled)[data-has-text][data-has-image]:hover,
+.qx-rnd.qx-layout > header .qx-aum-toolbar-item.md-button:not(.chip):not(.tag):not(.rating):not(.qx-c-nativestyle):not(.qx-disabled)[data-has-text][data-has-image]:hover,
+.qx-rnd.qx-layout > header .qx-aum-menu-button.md-button:not(.chip):not(.tag):not(.rating):not(.qx-c-nativestyle):not(.qx-disabled)[data-has-text][data-has-image]:hover,
+.qx-rnd.qx-layout > header .qx-aum-toolbar-button.md-button:not(.chip):not(.tag):not(.rating):not(.qx-c-nativestyle):not(.qx-disabled)[data-has-text][data-has-image]:hover {
+  color: var(--qx-dialog-tbutton-fill-hvr);
+  fill: var(--qx-dialog-tbutton-fill-hvr);
+  stroke: var(--qx-dialog-tbutton-stroke-hvr);
+}
+.qx-maximize-or-restore:active,
+.qx-rnd.qx-layout > header .qx-aum-menu-item.md-button:not(.chip):not(.tag):not(.rating):not(.qx-c-nativestyle):not(.qx-disabled)[data-has-text][data-has-image]:active,
+.qx-rnd.qx-layout > header .qx-aum-toolbar-item.md-button:not(.chip):not(.tag):not(.rating):not(.qx-c-nativestyle):not(.qx-disabled)[data-has-text][data-has-image]:active,
+.qx-rnd.qx-layout > header .qx-aum-menu-button.md-button:not(.chip):not(.tag):not(.rating):not(.qx-c-nativestyle):not(.qx-disabled)[data-has-text][data-has-image]:active,
+.qx-rnd.qx-layout > header .qx-aum-toolbar-button.md-button:not(.chip):not(.tag):not(.rating):not(.qx-c-nativestyle):not(.qx-disabled)[data-has-text][data-has-image]:active {
+  color: var(--qx-dialog-tbutton-fill-act);
+  fill: var(--qx-dialog-tbutton-fill-act);
+  stroke: var(--qx-dialog-tbutton-stroke-act);
+}
+.qx-maximize-or-restore:disabled,
+.qx-rnd.qx-layout > header .qx-aum-menu-item.md-button:not(.chip):not(.tag):not(.rating):not(.qx-c-nativestyle)[data-has-text][data-has-image]:disabled,
+.qx-rnd.qx-layout > header .qx-aum-toolbar-item.md-button:not(.chip):not(.tag):not(.rating):not(.qx-c-nativestyle)[data-has-text][data-has-image]:disabled,
+.qx-rnd.qx-layout > header .qx-aum-menu-button.md-button:not(.chip):not(.tag):not(.rating):not(.qx-c-nativestyle)[data-has-text][data-has-image]:disabled,
+.qx-rnd.qx-layout > header .qx-aum-toolbar-button.md-button:not(.chip):not(.tag):not(.rating):not(.qx-c-nativestyle)[data-has-text][data-has-image]:disabled {
+  color: var(--qx-dialog-tbutton-fill-dsb);
+  fill: var(--qx-dialog-tbutton-fill-dsb);
+  stroke: var(--qx-dialog-tbutton-stroke-dsb);
+}
+/* END TEMPORARY BLOCK UNTIL NEW BUILD IS CREATED (> 3861) */
