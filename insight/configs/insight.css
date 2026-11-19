@@ -286,6 +286,13 @@ aside > label.qx-toggle {
 .qx-bool-widget > input:checked ~ .wrapper > [data-checkbox="checked"] {
 	fill: #4d8955;
 }
+.qx-fin-loan-notice .qx-text {
+	color: #ecf014 !important;
+}
+.qx-fin-loan-ins-notice .qx-text {
+	color: #f0bd14 !important;
+	font-weight: bold;
+}
 /* END: CSS Styling with CFC Colors (Kevon Mc Lean) */
 
 .qx-table-cell.qx-c-activefield.qx-content .qx-aum.qx-column-edit-control.qx-element-role-input.qx-focused.qx-has-focus {
