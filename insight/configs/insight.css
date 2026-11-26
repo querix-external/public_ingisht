@@ -293,6 +293,9 @@ aside > label.qx-toggle {
 	color: #f0bd14 !important;
 	font-weight: bold;
 }
+.qx-rnd.qx-layout > header {
+	background-color: rgb(215 215 215);
+}
 /* END: CSS Styling with CFC Colors (Kevon Mc Lean) */
 
 .qx-table-cell.qx-c-activefield.qx-content .qx-aum.qx-column-edit-control.qx-element-role-input.qx-focused.qx-has-focus {
